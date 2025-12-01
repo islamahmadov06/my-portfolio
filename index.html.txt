@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İslam Əhmədov - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <header>
+        <h1>İslam Əhmədov</h1>
+        <p>Information Technology Management Student</p>
+    </header>
+
+    <section class="content">
+        <h2>About Me</h2>
+        <p>I am a student at Azerbaijan State Oil and Industry University studying IT Management.</p>
+
+        <h2>Education</h2>
+        <p>University: ADNSU – Information Technology Management (English sector)</p>
+
+        <h2>Experience</h2>
+        <p>Cybersecurity, web development, and technology enthusiast.</p>
+    </section>
+
+</body>
+</html>ss
