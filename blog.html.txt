@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - İslam Əhmədov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <header>
+        <h1>Blog</h1>
+        <p>My articles and thoughts</p>
+    </header>
+
+    <section class="content">
+        <h2>Article 1: Cybersecurity Basics</h2>
+        <p>Cybersecurity is essential in the modern digital world. In this post, I explain basic concepts such as threats, vulnerabilities, encryption, and network defense.</p>
+
+        <h2>Article 2: Why Learn Web Development?</h2>
+        <p>Web development is one of the most in-demand skills today. It helps you build real projects, understand technology, and open career opportunities.</p>
+
+        <h2>Article 3: My Programming Journey</h2>
+        <p>I started learning coding to improve myself and create real-world projects. It has helped me grow my career and technical skills.</p>
+    </section>
+
+</body>
+</html>

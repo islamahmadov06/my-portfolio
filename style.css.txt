@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Page content */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content h2 {
+    margin-top: 25px;
+    color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
