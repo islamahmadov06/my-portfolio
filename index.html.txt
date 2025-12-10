@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>İslam Əhmədov — Cybersecurity Student & Developer</title>
+  <meta name="description" content="Portfolio of İslam Əhmədov — ADNSU student, cybersecurity enthusiast, Python & C++ developer.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="İslam Əhmədov — Portfolio">
+  <meta property="og:description" content="Cybersecurity student & developer — Python, C++, Linux, Networking">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/profile.jpg" alt="Profile photo of İslam Əhmədov" class="avatar" />
+        <div>
+          <h1 class="brand-title">İslam Əhmədov</h1>
+          <p class="brand-sub">Cybersecurity Student • Python &amp; C++ • ADNSU</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <nav aria-label="Main Navigation" class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#volunteering">Volunteering</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container" id="home" aria-label="Hero">
+      <div class="hero-left">
+        <h2 class="headline">Hi, I’m <strong>İslam</strong>.</h2>
+        <p class="lead">I’m building a career in <strong>cybersecurity</strong>. I create tools, study networks, and write code in <strong>Python</strong> and <strong>C++</strong>.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn" href="assets/resume.pdf" download>Download résumé</a>
+        </div>
+
+        <ul class="meta-list">
+          <li><strong>University:</strong> ADNSU — Information Technology Management</li>
+          <li><strong>Email:</strong> <a href="mailto:islam.ahmadov@example.com">islam.ahmadov@example.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+994XXXXXXXXX">+994 XX XXX XX XX</a></li>
+        </ul>
+
+        <div class="socials small">
+          <a target="_blank" rel="noopener" href="https://github.com/islamahmadov06" aria-label="GitHub">GitHub</a>
+          <a target="_blank" rel="noopener" href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a target="_blank" rel="noopener" href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="false">
+        <div class="card profile-card">
+          <img src="assets/profile.jpg" alt="İslam profile photo" class="profile-large" />
+          <div class="card-body">
+            <h3>About me</h3>
+            <p>I study at ADNSU and I enjoy turning concepts into working tools — especially in networking and security. I love teaching and volunteering.</p>
+            <div class="skill-badges">
+              <span>Python</span><span>C++</span><span>Linux</span><span>Networking</span><span>Wireshark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+      <p class="section-lead">Live projects from GitHub plus featured work.</p>
+
+      <div class="projects-grid" id="repos"></div>
+
+      <h3 class="featured-heading">Featured</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Library Management System</h4>
+          <p>My course project: MySQL-backed LMS with 18 tables, auth, and reporting (SQL + PHP).</p>
+          <div class="card-actions">
+            <a class="btn" href="#" target="_blank">Report</a>
+            <a class="btn btn-primary" href="#" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h4>Network Analyzer Scripts</h4>
+          <p>Python scripts to parse pcap files and extract metrics for assignments.</p>
+          <div class="card-actions"><a class="btn btn-primary" href="#" target="_blank">Source</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container" aria-labelledby="education-h">
+      <h2 id="education-h">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>2023 — Present</time>
+          <div>
+            <strong>ADNSU</strong>
+            <p>Faculty of Information Technology Management — studying in English.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <time>2019 — 2023</time>
+          <div><strong>School №263</strong><p>High school diploma</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section container" aria-labelledby="achievements-h">
+      <h2 id="achievements-h">Life Achievements</h2>
+      <div class="cards-grid">
+        <div class="info-card">
+          <h4>Volunteer — Tech Camp</h4>
+          <p>Taught Python basics to high-school students (2024)</p>
+        </div>
+        <div class="info-card">
+          <h4>Top Student — Networking</h4>
+          <p>Highest score on routing project (2023)</p>
+        </div>
+        <div class="info-card">
+          <h4>Open Source</h4>
+          <p>Contributor to student library management repository</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOLUNTEERING -->
+    <section id="volunteering" class="section container" aria-labelledby="vol-h">
+      <h2 id="vol-h">Volunteering</h2>
+      <ul>
+        <li>Local Tech Camp — Python mentor (2024)</li>
+        <li>Community Wi-Fi setup — assisted with network deployment (2022)</li>
+        <li>University Coding Club — organizer & tutor (2023)</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p class="section-lead">Open to internships, collaborations, and volunteering.</p>
+
+      <div class="contact-grid">
+        <div>
+          <h4>Contact details</h4>
+          <p>Email: <a href="mailto:islam.ahmadov@example.com">islam.ahmadov@example.com</a></p>
+          <p>Phone: <a href="tel:+994XXXXXXXXX">+994 XX XXX XX XX</a></p>
+          <p>Location: Baku, Azerbaijan</p>
+          <div class="socials">
+            <a target="_blank" rel="noopener" href="https://github.com/islamahmadov06">GitHub</a>
+            <a target="_blank" rel="noopener" href="#">LinkedIn</a>
+            <a target="_blank" rel="noopener" href="#">Instagram</a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <!-- honeypot to reduce spam -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="form-row">
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+
+          <p class="muted note">This form uses Formspree. Replace the form `action` with your Formspree endpoint or use Netlify Forms if preferred.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <strong>İslam Əhmədov</strong> — ADNSU • Cybersecurity Student</div>
+        <div class="muted">Last updated: Dec 10, 2025</div>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
