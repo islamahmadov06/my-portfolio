@@ -1,0 +1,19 @@
+# İslam Əhmədov — Portfolio
+
+Modern minimal portfolio website. Built for GitHub Pages.
+
+## Files
+- `index.html`
+- `css/style.css`
+- `js/script.js`
+- `assets/` — put your `profile.jpg`, `resume.pdf`, `favicon.ico` here.
+
+## Quick setup (local)
+```bash
+# create repo locally (if not yet)
+git init
+git add .
+git commit -m "Initial portfolio"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<your-repo>.git
+git push -u origin main
