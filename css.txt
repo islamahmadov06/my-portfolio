@@ -1,0 +1,139 @@
+:root{
+  --accent:#0f62fe;
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --radius:12px;
+  --container:1100px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:linear-gradient(180deg,#071021,#071829);
+  color:#e6eef8;
+  font-family:Inter,system-ui,Arial;
+  line-height:1.6;
+}
+
+.container{
+  max-width:var(--container);
+  margin:auto;
+  padding:24px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 0;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.brand img{
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,0.06);
+}
+
+.nav{
+  display:flex;
+  gap:14px;
+}
+
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:8px;
+}
+.nav a:hover{
+  background:rgba(255,255,255,0.05);
+  color:#fff;
+}
+
+.hamburger{
+  display:none;
+  border:0;
+  background:none;
+  color:#fff;
+  font-size:26px;
+}
+
+.card{
+  background:rgba(255,255,255,0.02);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:0 6px 26px rgba(0,0,0,0.25);
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 350px;
+  gap:28px;
+  align-items:flex-start;
+  margin-top:20px;
+}
+
+.section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.list{
+  list-style:none;
+  margin-top:8px;
+}
+.list li{
+  padding:7px 0;
+  border-bottom:1px dashed rgba(255,255,255,0.05);
+}
+
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  padding:10px 14px;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+  margin-top:10px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.project{
+  background:rgba(255,255,255,0.03);
+  padding:16px;
+  border-radius:var(--radius);
+}
+
+.footer{
+  text-align:center;
+  color:var(--muted);
+  padding:30px 0;
+  margin-top:30px;
+}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .nav{display:none}
+  .hamburger{display:block}
+}
+
+@media(max-width:560px){
+  .container{padding:16px}
+  .gallery{grid-template-columns:1fr}
+}
