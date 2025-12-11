@@ -1,7 +1,2 @@
 
-/* Print-friendly */
-@media print{
-  body{color:#000;background:#fff}
-  .nav, #theme-toggle, .cta-row, .socials {display:none}
-}
 
