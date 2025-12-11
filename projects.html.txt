@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — İslam Əhmədov</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="container header">
+  <div class="brand">
+    <img src="assets/profile.jpg" alt="Profile">
+    <div>
+      <h1>İslam Əhmədov</h1>
+      <div class="small">Projects</div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <button class="hamburger" id="hamburger">☰</button>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <div class="section-title">
+      <h2>My Projects</h2>
+      <span class="small">Cybersecurity & development</span>
+    </div>
+
+    <div class="gallery">
+      <div class="project">
+        <h3>Packet Analyzer Script</h3>
+        <p class="small">Python</p>
+        <p>Packet processing tool using Scapy. Replace with details + GitHub link.</p>
+      </div>
+
+      <div class="project">
+        <h3>eFootball Joystick Setup</h3>
+        <p class="small">Hobby</p>
+        <p>Optimized configs for gameplay & controller setup.</p>
+      </div>
+
+      <div class="project">
+        <h3>Simple Web App</h3>
+        <p class="small">HTML / CSS / JS</p>
+        <p>Frontend project showcasing UI design + animations.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">© 2025 İslam Əhmədov</footer>
+
+<script>
+const btn=document.getElementById("hamburger");
+btn.onclick=()=>{const nav=document.getElementById("nav");nav.style.display=nav.style.display==="flex"?"none":"flex";}
+</script>
+
+</body>
+</html>

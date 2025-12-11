@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog — İslam Əhmədov</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="container header">
+  <div class="brand">
+    <img src="assets/profile.jpg" alt="Profile">
+    <div>
+      <h1>İslam Əhmədov</h1>
+      <div class="small">Cybersecurity Student</div>
+    </div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <button class="hamburger" id="hamburger">☰</button>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="section-title">
+      <h2>Blog</h2>
+      <span class="small">Notes & learning journey</span>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <h3>How I started learning Cybersecurity</h3>
+      <p class="small">Dec 1, 2025</p>
+      <p>I began with basic networking, OSI, Wireshark practices, and small Python automation scripts. Replace this text with your real story.</p>
+    </div>
+
+    <div class="card">
+      <h3>Packet Analysis with Wireshark</h3>
+      <p class="small">Nov 15, 2025</p>
+      <p>Short intro to packet capture, filtering, analyzing TCP handshakes. Replace with your real notes.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">© 2025 İslam Əhmədov</footer>
+
+<script>
+const btn=document.getElementById("hamburger");
+btn.onclick=()=>{const nav=document.getElementById("nav");nav.style.display=nav.style.display==="flex"?"none":"flex";}
+</script>
+
+</body>
+</html>
