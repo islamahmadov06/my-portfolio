@@ -1,0 +1,388 @@
+<!--
+Repository structure (suggested):
+
+my-portfolio/                <- repo root
+  README.md
+  index.html
+  blog.html
+  projects.html
+  css/
+    style.css
+  assets/
+    profile.jpg  <-- put your photo here (used as placeholder)
+    favicon.png
+
+This single file in the canvas contains the full source for each file. Copy each section to files in your local project, push to a PUBLIC GitHub repo (e.g. "my-portfolio"), then enable GitHub Pages (Settings → Pages → choose branch main / docs or root) to publish.
+
+Note: This template already uses your name where known. Replace placeholders (GROUP_NUMBER, BIO, VOLUNTEERING_DETAILS, EDUCATION_DETAILS, EXPERIENCE_DETAILS) with your real data before pushing.
+-->
+
+<!-- FILE: README.md -->
+# My Portfolio — İslam Əhmədov
+
+**Repository:** `my-portfolio` (public)
+
+**What this repo contains**
+- `index.html` — Home page (about, education, volunteering, contact)
+- `blog.html` — Blog & articles
+- `projects.html` — Projects / Services / Gallery
+- `css/style.css` — stylesheet
+- `assets/` — profile photo, favicon and other media
+
+## How to use
+1. Replace placeholders in HTML files (GROUP_NUMBER, BIO, etc.) with your actual information.
+2. Add your profile photo to `assets/profile.jpg` (or update the image path in the HTML).
+3. Commit and push to a **public** repository on GitHub.
+4. Publish on GitHub Pages: go to `Settings → Pages` and set source to `main` branch and `/ (root)`.
+5. Your site will be available at `https://<your-github-username>.github.io/<repo-name>/`.
+
+## Submission checklist
+- [ ] Full name and group number included in site
+- [ ] GitHub username added to README
+- [ ] Repo is Public
+- [ ] GitHub Pages published and link provided
+
+
+<!-- FILE: css/style.css -->
+/* Modern, clean responsive stylesheet */
+:root{
+  --accent:#0f62fe;
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --radius:12px;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{background:linear-gradient(180deg,#071021 0%, #071829 100%);color:#e6eef8;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.06)}
+.brand h1{font-size:20px;margin:0}
+.nav{display:flex;gap:14px;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+.nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+.hamburger{display:none;border:0;background:none;color:var(--muted);font-size:22px}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:30px 0}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:var(--radius);box-shadow:0 6px 22px rgba(2,6,23,0.6)}
+.bio h2{margin:0 0 8px 0}
+.pill{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+.list{margin:12px 0;padding:0;list-style:none}
+.list li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.project{padding:14px;background:rgba(255,255,255,0.02);border-radius:10px}
+.footer{padding:30px 0;color:var(--muted);text-align:center}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .nav{display:none}
+  .hamburger{display:block}
+}
+@media (max-width:520px){
+  .brand h1{font-size:16px}
+  .container{padding:16px}
+}
+
+/* Utility */
+.small{font-size:13px;color:var(--muted)}
+
+/* Blog list */
+.blog-item{padding:16px;border-radius:10px;background:rgba(255,255,255,0.015);margin-bottom:12px}
+
+/* Projects gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.gallery{grid-template-columns:1fr}}
+
+/* Contact form simple styles */
+.form-row{display:flex;gap:12px}
+.form-row input,textarea{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef8}
+textarea{min-height:120px}
+
+/* Footer links */
+.footer a{color:var(--muted);text-decoration:none}
+
+/* subtle animation */
+.fade-up{transform:translateY(6px);opacity:0;animation:fadeUp .6s ease forwards}
+@keyframes fadeUp{to{transform:none;opacity:1}}
+
+
+<!-- end CSS -->
+
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>İslam Əhmədov — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Portfolio of İslam Əhmədov — Cybersecurity student, Python & C++ developer at ADNSU">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/profile.jpg" alt="İslam Əhmədov — profile photo">
+      <div>
+        <h1>İslam Əhmədov</h1>
+        <div class="small">Cybersecurity Student • Python & C++ • ADNSU</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-expanded="false">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card bio fade-up">
+        <div class="pill">About me</div>
+        <h2>Hello — I'm İslam</h2>
+        <p id="bio">BIO_PLACEHOLDER
+        </p>
+
+        <div class="section-title">
+          <h3>Education</h3>
+          <span class="small">ADNSU</span>
+        </div>
+        <ul class="list">
+          <li><strong>Faculty:</strong> Information Technology Management, Azerbaijan State Oil and Industry University (ADNSU).</li>
+          <li><strong>Studying:</strong> Cybersecurity, Python & C++ development.</li>
+          <li><strong>Group number:</strong> GROUP_NUMBER</li>
+        </ul>
+
+        <div class="section-title">
+          <h3>Volunteering</h3>
+          <span class="small">Community & events</span>
+        </div>
+        <p id="volunteering">VOLUNTEERING_DETAILS</p>
+
+        <div style="margin-top:14px">
+          <a class="btn" href="projects.html">See my projects</a>
+        </div>
+      </div>
+
+      <aside class="card fade-up">
+        <h3>Quick facts</h3>
+        <ul class="list">
+          <li><strong>Location:</strong> Baku, Azerbaijan (update if different)</li>
+          <li><strong>Interests:</strong> Red Teaming, network security, automation</li>
+          <li><strong>Languages:</strong> English (Pre-Intermediate), Azerbaijani</li>
+        </ul>
+
+        <div style="margin-top:12px">
+          <h4>Contact</h4>
+          <div class="small">Email: <a href="mailto:islam.ahmadov@example.com">islam.ahmadov@example.com</a></div>
+          <div class="small">GitHub: <a href="https://github.com/<YOUR_GITHUB_USERNAME>" target="_blank">@YOUR_GITHUB_USERNAME</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" style="margin-top:20px">
+      <div class="section-title">
+        <h3>Experience & Courses</h3>
+        <span class="small">Practical work & highlights</span>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h4>Relevant experience</h4>
+          <ul class="list">
+            <li>Coursework and personal projects in cybersecurity and network tools.</li>
+            <li>Developed small tools in Python and C++.</li>
+            <li>Game projects & hobby projects (eFootball, etc.).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Training</h4>
+          <ul class="list">
+            <li>Self-study: networking, OSI/TCP-IP, Wireshark basics.</li>
+            <li>Preparing for Red Team skills and certifications (planned).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:20px">
+      <div class="section-title">
+        <h3>Contact me</h3>
+        <span class="small">Send a short message</span>
+      </div>
+      <form onsubmit="alert('This template doesn\'t send messages — replace with your form handler or email link.');return false;">
+        <div class="form-row">
+          <input placeholder="Your name">
+          <input placeholder="Your email">
+        </div>
+        <div style="margin-top:10px">
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div style="margin-top:10px">
+          <button class="btn">Send message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">© 2025 İslam Əhmədov — Portfolio • Built with HTML & CSS • Replace placeholder contact info before submission</div>
+  </footer>
+
+<script>
+// Mobile nav toggle
+const ham = document.getElementById('hamburger');
+ham.addEventListener('click', ()=>{
+  const nav = document.querySelector('.nav');
+  const expanded = ham.getAttribute('aria-expanded') === 'true';
+  ham.setAttribute('aria-expanded', String(!expanded));
+  if(nav.style.display==='flex') nav.style.display='none'; else nav.style.display='flex';
+});
+</script>
+</body>
+</html>
+
+
+<!-- FILE: blog.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog — İslam Əhmədov</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/profile.jpg" alt="profile">
+      <div>
+        <h1>İslam Əhmədov</h1>
+        <div class="small">Cybersecurity Student • ADNSU</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamb2">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="section-title"><h2>Blog</h2><span class="small">Notes, study tips & articles</span></div>
+
+      <article class="blog-item">
+        <h3>How I started learning cybersecurity</h3>
+        <p class="small">Dec 1, 2025 — study notes and roadmap</p>
+        <p>ARTICLE_SUMMARY_PLACEHOLDER — replace with your text about study journey, important resources (Wireshark, practical labs), and tips for students.</p>
+        <a class="small" href="#">Read more →</a>
+      </article>
+
+      <article class="blog-item">
+        <h3>Practical lab: analyzing packets with Wireshark</h3>
+        <p class="small">Nov 15, 2025</p>
+        <p>SHORT_SUMMARY_PLACEHOLDER</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">© 2025 İslam Əhmədov</div>
+  </footer>
+
+<script>
+// mobile nav
+const ham2 = document.getElementById('hamb2');
+ham2.addEventListener('click', ()=>{const nav=document.querySelector('.nav');nav.style.display=nav.style.display==='flex'?'none':'flex';});
+</script>
+</body>
+</html>
+
+
+<!-- FILE: projects.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects — İslam Əhmədov</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/profile.jpg" alt="profile">
+      <div>
+        <h1>İslam Əhmədov</h1>
+        <div class="small">Projects & gallery</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamb3">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="section-title"><h2>Selected projects</h2><span class="small">Tools, coursework, and hobby work</span></div>
+
+      <div class="gallery">
+        <div class="project">
+          <h4>Project: Packet analyzer script</h4>
+          <p class="small">Python — coursework</p>
+          <p>Short description. Replace with your project details, repo link, and screenshots.</p>
+        </div>
+        <div class="project">
+          <h4>Project: eFootball setup</h4>
+          <p class="small">Hobby / configuration</p>
+          <p>Short description about joystick integration and gameplay setup.</p>
+        </div>
+        <div class="project">
+          <h4>Project: Simple web app</h4>
+          <p class="small">HTML/CSS/JS</p>
+          <p>Short description and link to GitHub repo.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <div class="section-title"><h3>How to view project code</h3><span class="small">GitHub links</span></div>
+      <p class="small">Add links to each project's GitHub repository here. If something is private, provide a README with screenshots instead.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer small">© 2025 İslam Əhmədov</footer>
+
+<script>
+const ham3 = document.getElementById('hamb3');
+ham3.addEventListener('click', ()=>{const nav=document.querySelector('.nav');nav.style.display=nav.style.display==='flex'?'none':'flex';});
+</script>
+</body>
+</html>
+
+
+<!-- FILE: assets/README.txt -->
+Place your images here:
+- assets/profile.jpg — your profile photo (square recommended 400x400)
+- assets/favicon.png — optional favicon
+
+
+<!-- end of multi-file content -->
